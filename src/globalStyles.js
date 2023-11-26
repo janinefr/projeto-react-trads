@@ -29,6 +29,8 @@ export const MainHeading = styled.h1`
 	width: 100%;
 	text-align: center;
 	line-height: 109.9%;
+	position: relative;
+	z-index: 1;
 `;
 
 export const Heading = styled.h2`
