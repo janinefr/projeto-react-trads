@@ -29,6 +29,9 @@ export const FeaturesSection = styled.section`
     letter-spacing: 0.389px;
     text-transform: uppercase;
     margin-bottom: 8px;
+    @media screen and (max-width: 1300px) {
+      text-align: center;
+    }
    
    
  }
@@ -43,6 +46,10 @@ export const FeaturesSection = styled.section`
     font-weight: 500;
     line-height: normal;
     margin-bottom: 48px;
+    @media screen and (max-width: 1300px) {
+      text-align: center;
+      width: 100%;
+    }
  }
 
  #paragraph{
@@ -55,6 +62,10 @@ export const FeaturesSection = styled.section`
     line-height: 24px; /* 150% */
     letter-spacing: 0.307px;
     margin-bottom: 30px;
+    @media screen and (max-width: 1300px) {
+      text-align: center;
+      width: 100%;
+    }
  }
 
  #paragraph #p2{
@@ -65,6 +76,12 @@ export const FeaturesSection = styled.section`
     display: inline-flex;
     align-items: flex-start;
     gap: 56px;
+    @media screen and (max-width: 1300px) {
+      text-align: center;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+    }
     
  }
 

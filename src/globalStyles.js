@@ -40,23 +40,20 @@ export const MainHeading = styled.h1`
 
 export const Heading = styled.h2`
 	font-size: clamp(1.3rem, 13vw, 3.1rem);
+	font-weight: 500;
 	margin: ${({ margin }) => (margin ? margin : '')};
 	margin-bottom: ${({ mb }) => (mb ? mb : '')};
 	margin-top: ${({ mt }) => (mt ? mt : '')};
-	color: ${({ inverse }) => (inverse ? '$403ae3' : '#fff')};
-	letter-spacing: 0.4rem;
-	line-height: 1.06;
-	text-align: center;
+	text-align: left;
 	width: ${({ width }) => (width ? width : '100%')};
 `;
 export const TextWrapper = styled.span`
 	color: ${({ color }) => (color ? color : '')};
 	font-size: ${({ size }) => (size ? size : '')};
-	font-weight: ${({ weight }) => (weight ? weight : '')};
 	letter-spacing: ${({ spacing }) => (spacing ? spacing : '')};
 	padding: ${({ padding }) => (padding ? padding : '')};
-	margin: ${({ margin }) => (margin ? margin : '')};
-	margin-bottom: ${({ mb }) => (mb ? mb : '')};
+	// margin: ${({ margin }) => (margin ? margin : '')};
+	// margin-bottom: ${({ mb }) => (mb ? mb : '')};
 	margin-top: ${({ mt }) => (mt ? mt : '')};
 `;
 export const Section = styled.section`
