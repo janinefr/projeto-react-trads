@@ -16,7 +16,7 @@ export const HeroSection = styled.section`
  position: absolute;
  left: 0;
  top: 620px;
- @media screen and (max-width: 930px) {
+ @media screen and (max-width: 1495px) {
   display: none; /* Esconder o contêiner em telas menores que 768px */
 }
 `;
@@ -24,7 +24,7 @@ export const HeroSection = styled.section`
 export const StyledSVG2 = styled.svg`
  position: absolute;
  left: 0;
- @media screen and (max-width: 930px) {
+ @media screen and (max-width: 1495px) {
   display: none; /* Esconder o contêiner em telas menores que 768px */
 }
 `;
@@ -33,7 +33,7 @@ export const StyledSVG3 = styled.svg`
  position: absolute;
  right: 0;
  top: 160px;
- @media screen and (max-width: 930px) {
+ @media screen and (max-width: 1495px) {
   display: none; /* Esconder o contêiner em telas menores que 768px */
 }
 `;
@@ -42,7 +42,7 @@ export const StyledSVG4 = styled.svg`
  position: absolute;
  top: 180px;
  right: 0;
- @media screen and (max-width: 930px) {
+ @media screen and (max-width: 1495px) {
   display: none; /* Esconder o contêiner em telas menores que 768px */
 }
 `;

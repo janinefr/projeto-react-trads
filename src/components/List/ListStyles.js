@@ -10,7 +10,7 @@ export const ListSection = styled.section`
   background-position: center;
   background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-
+  
   table{
     background-color: white;
   }

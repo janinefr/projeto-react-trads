@@ -6,7 +6,11 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', 'Public Sans', sans-serif;
+	
   }
+  body {
+	overflow-x: hidden;
+}
 `;
 
 export const Container = styled.div`
@@ -14,9 +18,10 @@ export const Container = styled.div`
 	max-width: 1300px;
 	margin-right: auto;
 	margin-left: auto;
-	padding: 0 50px;
+	
+	
 
-	@media screen and (max-width: 960px) {
+	@media screen and (max-width: 1500px) {
 		padding: 0 30px;
 	}
 `;
@@ -104,5 +109,7 @@ export const Column = styled.div`
 	max-height: ${({ maxHeight }) => (maxHeight ? maxHeight : 'auto')};
 	min-height: ${({ minHeight }) => (minHeight ? minHeight : 'auto')};
 `;
+
+
 
 export default GlobalStyle;

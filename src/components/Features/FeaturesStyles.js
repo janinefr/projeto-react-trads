@@ -5,7 +5,10 @@ export const FeaturesSection = styled.section`
   justify-content: center; 
   align-items: center; 
   flex-direction: column; 
+
+
   height: 100vh;
+
   background-color: #F5F5F5;
   background-position: center;
   background-size: cover;
@@ -15,6 +18,7 @@ export const FeaturesSection = styled.section`
   
 
  h3{
+    
     color: #212C4F;
     text-align: left;
     font-family: Public Sans;
@@ -26,9 +30,12 @@ export const FeaturesSection = styled.section`
     text-transform: uppercase;
     margin-bottom: 8px;
    
+   
  }
 
  h1{
+    
+    width: 60%;
     color: #3A5ECF;
     font-family: Work Sans;
     font-size: 40px;
@@ -39,6 +46,7 @@ export const FeaturesSection = styled.section`
  }
 
  #paragraph{
+    width: 50%;
     color: #212C4F;
     font-family: Public Sans;
     font-size: 16px;
@@ -57,12 +65,11 @@ export const FeaturesSection = styled.section`
     display: inline-flex;
     align-items: flex-start;
     gap: 56px;
-    @media screen and (max-width: 736px) {
-        margin-top: -100px;
-      }
+    
  }
 
  #p_number {
+
     color: #212C4F;
     font-family: 'Public Sans', sans-serif;
     font-size: 16px;
@@ -72,6 +79,7 @@ export const FeaturesSection = styled.section`
   }
   
   .styled {
+    
     color: #3A5ECF;
     font-family: Work Sans;
     font-size: 38px;
@@ -86,11 +94,35 @@ export const FeaturesSection = styled.section`
 
 `;
 
+export const StyledLogoFile = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100vw;
+    gap: 50px;
+    position: absolute;
+    top: -50px;
+    left: 0%; 
+    @media screen and (max-width: 1200px) {
+        display: none; /* Esconder o contêiner em telas menores que 768px */
+      }
 
+`;
 
 export const StyledImg = styled.img`
-  width: 50%;
-  height: auto;
+width: 50%;
+height: 100vh;
+flex-shrink: 0;
+position: absolute;
+left: 1000px;
+top: 0;
+z-index:-1;
+border-bottom-left-radius: 100%;
+@media screen and (max-width: 1500px) {
+    display: none;
+  }
+
 `;
 
 export const StyledLogosContainer = styled.div`
@@ -103,7 +135,6 @@ export const StyledLogosContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding: 0 20px;
-  margin: -400px 0 auto; /* Para centralizar horizontalmente */
   @media screen and (max-width: 930px) {
     display: none; /* Esconder o contêiner em telas menores que 768px */
   }
@@ -115,20 +146,36 @@ export const StyledLogos = styled.img`
   object-fit: contain;
 `;
 
-export const StyledCircleSVG = styled.svg`
-  position: relative;
-  transform: translateY(-90px);
-  left: 1250px;
-  @media screen and (max-width: 930px) {
-    display: none; /* Esconder o contêiner em telas menores que 768px */
-  }
+// export const StyledCircleSVG = styled.svg`
+//   position: relative;
+//   transform: translateY(-90px);
+//   left: 1250px;
+//   @media screen and (max-width: 930px) {
+//     display: none; /* Esconder o contêiner em telas menores que 768px */
+//   }
+// `;
+
+export const StyledCircleSVG = styled.div`
+  border-radius: 50%;
+  background-color: #CF6A4E;
+  width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
 `;
 
 export const StyledSVGpdf = styled.svg`
-  position: relative;
-  transform: translateY(-110px);
-  left: 1193px;
-  @media screen and (max-width: 930px) {
-    display: none; /* Esconder o contêiner em telas menores que 768px */
-  }
+ 
 `;
+
+// export const StyledSVGpdf = styled.svg`
+//   position: relative;
+//   transform: translateY(-110px);
+//   left: 1193px;
+//   @media screen and (max-width: 930px) {
+//     display: none; /* Esconder o contêiner em telas menores que 768px */
+//   }
+// `;
+
