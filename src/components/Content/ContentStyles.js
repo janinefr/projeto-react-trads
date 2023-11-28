@@ -17,7 +17,7 @@ export const ContentSection = styled.section`
 
 export const TextWrapper = styled.div`
     max-width: 60%;
-    padding-bottom: 100px;
+    
 
     @media screen and (max-width: 768px) {
         padding: 40px 0 60px 0;		
@@ -31,10 +31,37 @@ export const TextWrapper = styled.div`
         max-width: 100%;
 
 	}
-    @media screen and (max-width: 380px) {
-        padding: 40px 0 40px 0;
- 
-	}
+
+
+    ul li{
+        display: inline-flex;
+        justify-content: center; 
+        align-items: center;
+        list-style: none;
+        margin: 3em 1em 0 0;
+
+        
+}
+
+
+    ul li svg{
+        width: 24px;
+        height: 24px;
+        color: #3A5ECF;
+        cursor: pointer;
+    }
+
+    ul li span {
+        margin-left: 10px; /* Margem entre o ícone e o texto */
+        color: #212C4F;
+        font-family: Work Sans;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 133.333% */
+        letter-spacing: 0.346px;
+        
+    }
 
 `;
 
