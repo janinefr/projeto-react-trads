@@ -1,8 +1,8 @@
 import React from 'react';
 import { Container } from '../../globalStyles';
 import { StyledLogoFile, StyledImg, StyledSVGpdf, StyledCircleSVG, StyledLogosContainer, StyledLogos, FeaturesSection } from './FeaturesStyles';
-import logos from 'C:/Users/janin/projeto-trads/src/assets/logos.png';
-import image from 'C:/Users/janin/projeto-trads/src/assets/imgpen.png';
+import logos from '../../assets/logos.png';
+import image from '../../assets/imgpen.png';
 
 const Features = () => {
     return (

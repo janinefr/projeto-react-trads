@@ -50,6 +50,12 @@ export const FeaturesSection = styled.section`
       text-align: center;
       width: 100%;
     }
+    @media screen and (max-width: 465px) {
+      font-size: 25px;  
+    }
+    @media screen and (max-width: 380px) {
+      font-size: 20px;  
+    }
  }
 
  #paragraph{
@@ -128,15 +134,15 @@ export const StyledLogoFile = styled.div`
 `;
 
 export const StyledImg = styled.img`
-width: 50%;
+width: 45%;
 height: 100vh;
 flex-shrink: 0;
 position: absolute;
-left: 1000px;
+right: 0;
 top: 0;
 z-index:-1;
 border-bottom-left-radius: 100%;
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1300px) {
     display: none;
   }
 
@@ -152,6 +158,9 @@ export const StyledLogosContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding: 0 20px;
+  @media screen and (max-width: 14000px) {
+    width: 80%;   
+  }
   @media screen and (max-width: 930px) {
     display: none; /* Esconder o contêiner em telas menores que 768px */
   }

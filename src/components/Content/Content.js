@@ -1,8 +1,8 @@
 import React from 'react';
-import { Container, Heading } from '../../globalStyles';
-import { ImageWrapper, TopLine, Subtitle, TextWrapper, ContentSection } from './ContentStyles';
+import { Container } from '../../globalStyles';
+import { ImageWrapper, TopLine, Subtitle, TextWrapper, ContentSection, Heading } from './ContentStyles';
 // import mask from 'C:/Users/janin/projeto-trads/src/assets/mask.png';
-
+import image from '../../assets/corretor.png';
 const Content = () => {
     return (
         <ContentSection id="corretor">
@@ -17,11 +17,15 @@ const Content = () => {
                         Enim, fringilla molestie nam risus tempor egestas at et. Morbi vel aliquet ut sit amet cursus. Purus iaculis tincidunt iaculis nisl suspendisse. Porttitor elementum magna viverra volutpat, egestas nulla sagittis aliquam. Dolor arcu eget leo morbi nunc. Quis egestas magna sit ut blandit vel, sed aliquet.
                     </Subtitle>
                 </TextWrapper>
+                
 
                 {/* <ImageWrapper>  <img src={mask} alt="Descrição da imagem" /> </ImageWrapper> */}
               
                 
             </Container>
+            <ImageWrapper>
+                    <img src={image} />
+            </ImageWrapper>
         </ContentSection>
     );
 };

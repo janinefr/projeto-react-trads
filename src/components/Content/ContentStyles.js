@@ -11,22 +11,29 @@ export const ContentSection = styled.section`
 	background-size: cover;
     background-color: #F5F5F5;
 	box-shadow: inset 0 0 0 1000px rgba (0, 0, 0, 0.2);
+    position: relative;
 `;
 
 
 export const TextWrapper = styled.div`
     max-width: 60%;
-	margin-top: -100px;
+    padding-bottom: 100px;
 
-	@media screen and (max-width: 768px) {
-		padding-bottom: 65px;
-		> h1,
+    @media screen and (max-width: 768px) {
+        padding: 40px 0 60px 0;		
+        > h1,
 		p {
 			text-align: center;
 		}
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+        max-width: 100%;
+
+	}
+    @media screen and (max-width: 380px) {
+        padding: 40px 0 40px 0;
+ 
 	}
 
 `;
@@ -45,13 +52,20 @@ export const TopLine = styled.div`
 export const Heading = styled.h2`
     color: #212C4F;
     font-family: Work Sans;
+    font-weight: 500;
     font-size: 40px;
     font-style: normal;
     line-height: normal;
 
+    @media  (max-width: 956px) {
+        font-size: 35px;   
+     }
 	@media screen and (max-width: 768px) {
 		text-align: center;
+        font-size: 30px;   
 	}
+    
+    
 `;
 
 export const Subtitle = styled.p`
@@ -63,6 +77,40 @@ export const Subtitle = styled.p`
     font-weight: 300;
     line-height: 30px; /* 150% */
     letter-spacing: 0.48px;
+    @media screen and (max-width: 768px) {
+		
+        font-size: 16px;   
+	}
+`;
+
+export const ImageWrapper = styled.div`
+    
+    position:absolute;
+    top: 0;
+    width: 30%;
+    right: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 40%;
+
+
+    img{
+        object-fit: cover;
+        height: 100%;
+
+        
+    }
+
+    @media screen and (max-width: 768px) {
+    display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+    display: none;
+    }
+
+   
+
 `;
 
 

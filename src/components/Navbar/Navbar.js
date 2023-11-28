@@ -13,7 +13,7 @@ import {
 } from './NavbarStyles.js';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { data } from '../../data/NavbarData';
-import logo from 'C:/Users/janin/projeto-trads/src/assets/logo.png';
+import logo from '../../assets/logo.png';
 
 
 
