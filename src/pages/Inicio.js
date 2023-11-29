@@ -14,8 +14,8 @@ const Inicio = () => {
 
             <Hero />
             <Features />
-            <Carousel/>
             <List />
+            <Carousel/>
             <Content/>
             <Footer/>
         </>

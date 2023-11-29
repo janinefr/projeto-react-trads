@@ -1,36 +1,61 @@
 import React from 'react';
-
+import { Container } from '../../globalStyles';
+import { TopLine, Subtitle, TextWrapper, Heading } from './ListStyles';
 import { ListSection } from './ListStyles';
+import { MdArrowDropDown } from "react-icons/md";
 
 const List = () => {
     return (
         <ListSection id="minha_cotacao">
-            <table border="1" id='tabela1'>
-                <thead>
-                    <tr>
-                        <th>Coluna 1</th>
-                        <th>Coluna 2</th>
-                        <th>Coluna 3</th>
-                    </tr>
-                </thead>
+            <Container>
+                <TextWrapper>
+                    <TopLine>resultado</TopLine>
+                    <Heading>Sua Cotação</Heading>
+                    <Subtitle>Clique nos títulos para expandir as informações.</Subtitle>
+                </TextWrapper>
 
+                <button><MdArrowDropDown /></button>
+                <table id='tabela1'>
+                    <caption>Proposta Comercial</caption>
+                    <thead>
+                        <tr>
+                            <th>Empresa</th>
+                            <th>Plano</th>
+                            <th>Acomodação</th>
+                            <th>Rede</th>
+                        </tr>
+                    </thead>
+                    <tbody>
 
-                <tbody>
+                        <tr>
+                            <td>Industria de Laticinios Nova Aliança LTDA</td>
+                            <td>Top Nacional</td>
+                            <td>Enfermaria</td>
+                            <td>Nacional</td>
+                        </tr>
+                    </tbody>
 
-                    <tr>
-                        <td>Linha 1, Coluna 1</td>
-                        <td>Linha 1, Coluna 2</td>
-                        <td>Linha 1, Coluna 3</td>
-                    </tr>
+                    <thead>
+                        <tr>
+                            <th>Coparticipação</th>
+                            <th>Tipo de adesão</th>
+                            <th>Mais de um titular</th>
+                            <th>Corretor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
 
+                        <tr>
+                            <td>Não</td>
+                            <td>Compulsoria</td>
+                            <td>Sim</td>
+                            <td>xxxx</td>
+                        </tr>
+                    </tbody>
 
-                    <tr>
-                        <td>Linha 2, Coluna 1</td>
-                        <td>Linha 2, Coluna 2</td>
-                        <td>Linha 2, Coluna 3</td>
-                    </tr>
-                </tbody>
-            </table>
+                </table>
+            </Container>
+
 
         </ListSection>
 
