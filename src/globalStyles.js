@@ -18,6 +18,10 @@ export const Container = styled.div`
 	max-width: 1300px;
 	margin-right: auto;
 	margin-left: auto;
+	
+	
+	
+
 	@media screen and (max-width: 1500px) {
 		padding: 0 30px;
 	}
@@ -49,8 +53,8 @@ export const TextWrapper = styled.span`
 	font-size: ${({ size }) => (size ? size : '')};
 	letter-spacing: ${({ spacing }) => (spacing ? spacing : '')};
 	padding: ${({ padding }) => (padding ? padding : '')};
-	// margin: ${({ margin }) => (margin ? margin : '')};
-	// margin-bottom: ${({ mb }) => (mb ? mb : '')};
+	margin: ${({ margin }) => (margin ? margin : '')};
+	margin-bottom: ${({ mb }) => (mb ? mb : '')};
 	margin-top: ${({ mt }) => (mt ? mt : '')};
 `;
 export const Section = styled.section`

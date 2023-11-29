@@ -6,10 +6,10 @@ export const ListSection = styled.section`
   align-items: center; 
   flex-direction: column; 
   height: 100vh;
-  background-color: #212C4F;
+  background-color: white;
   background-position: center;
   background-size: cover;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  z-index: 1;
   
   table{
     background-color: white;
