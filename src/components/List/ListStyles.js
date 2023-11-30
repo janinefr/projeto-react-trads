@@ -10,8 +10,27 @@ export const ListSection = styled.section`
   background-position: center;
   background-size: cover;
   z-index: 1;
-  
+ 
+
+  .tableWrapper{
+    position: relative;
+}
+  .buttonWrapper{
+    right: 200px;
+    top: 220px;
+    
+
+    button{
+      font-size: 60px;
+      background: none;
+      border: none;
+      color: #3A5ECF;
+    
+  }
+
+  }
   table {
+    width: 100%;
     position: relative;
     display: inline-block;
     align-items: left;
@@ -19,6 +38,10 @@ export const ListSection = styled.section`
     
   
   }
+
+.tableClose{
+  display:none;
+ }
 
   #tabela1::after {
     content: '';
@@ -31,6 +54,7 @@ export const ListSection = styled.section`
   }
 
   caption {
+    width: 100vw;
     color: #3A5ECF;
     font-family: Work Sans;
     font-size: 20px;
@@ -53,16 +77,20 @@ export const ListSection = styled.section`
     background: rgba(0, 0, 0, 0.10);
   }
   
-  
+  .table2{
+    padding-top: 56px;
+
+  }
   
   th, td {
-    padding-right: 12px; /* Adiciona espaçamento interno */
-    padding-top: 12px;
+    padding: 12px 15px 12px 0;
+    // padding-right: 12px; /* Adiciona espaçamento interno */
+    // padding-top: 12px;
 
   }
 
   th{
-    margin-top: 24px;
+    width: 33%;
     text-align: left;
     color: #212C4F;
     font-family: Public Sans;
@@ -75,7 +103,7 @@ export const ListSection = styled.section`
   }
 
   td{
-    margin-bottom: 56px;
+    margin-right: 100px;
     color: #212C4F;
     font-family: Public Sans;
     font-size: 16px;
@@ -86,8 +114,11 @@ export const ListSection = styled.section`
   }
 
   
-  
+
 `;
+
+
+
 
 export const TextWrapper = styled.div`
     max-width: 100%;
@@ -108,7 +139,7 @@ export const TextWrapper = styled.div`
 	}
   `;
 
-  export const TopLine = styled.div`
+export const TopLine = styled.div`
     color: #212C4F;
     font-family: Public Sans;
     font-size: 18px;
@@ -154,3 +185,7 @@ export const Subtitle = styled.p`
 	}
 `;
 
+// export const tableWrapper = styled.div`
+
+
+// `;

@@ -1,11 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Container } from '../../globalStyles';
-import { TopLine, Subtitle, TextWrapper, Heading } from './ListStyles';
+import { TopLine, Subtitle, TextWrapper, Heading, tableWrapper, buttonWrapper } from './ListStyles';
 import { ListSection } from './ListStyles';
-import { MdArrowDropDown } from "react-icons/md";
+import { MdArrowDropDown, MdOutlineArrowDropUp } from "react-icons/md";
+
 
 const List = () => {
+    const [openIcon, setOpenIcon] = useState(true)
+
+    const toggleIcon = () => {
+        console.log('chegou aqui')
+        setOpenIcon(!openIcon);
+    };
+
+
+
+
+
     return (
+
         <ListSection id="minha_cotacao">
             <Container>
                 <TextWrapper>
@@ -14,47 +27,56 @@ const List = () => {
                     <Subtitle>Clique nos títulos para expandir as informações.</Subtitle>
                 </TextWrapper>
 
-                <button><MdArrowDropDown /></button>
-                <table id='tabela1'>
+                <div className='tableWrapper'>
+                    <div className='buttonWrapper'>
+                        <button onClick={() => toggleIcon()}>{openIcon ? <MdArrowDropDown /> : <MdOutlineArrowDropUp />}</button>
+                    </div>
                     <caption>Proposta Comercial</caption>
-                    <thead>
-                        <tr>
-                            <th>Empresa</th>
-                            <th>Plano</th>
-                            <th>Acomodação</th>
-                            <th>Rede</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+                    <table id='tabela1' className={openIcon ? "tableOpen" : "tableClose"}>
 
-                        <tr>
-                            <td>Industria de Laticinios Nova Aliança LTDA</td>
-                            <td>Top Nacional</td>
-                            <td>Enfermaria</td>
-                            <td>Nacional</td>
-                        </tr>
-                    </tbody>
 
-                    <thead>
-                        <tr>
-                            <th>Coparticipação</th>
-                            <th>Tipo de adesão</th>
-                            <th>Mais de um titular</th>
-                            <th>Corretor</th>
-                        </tr>
-                    </thead>
-                    <tbody>
+                        
+                        <thead>
+                            <tr>
+                                <th>Empresa</th>
+                                <th>Plano</th>
+                                <th>Acomodação</th>
+                                <th>Rede</th>
+                            </tr>
+                        </thead>
+                        <tbody>
 
-                        <tr>
-                            <td>Não</td>
-                            <td>Compulsoria</td>
-                            <td>Sim</td>
-                            <td>xxxx</td>
-                        </tr>
-                    </tbody>
+                            <tr>
+                                <td>Industria de Laticinios Nova Aliança LTDA</td>
+                                <td>Top Nacional</td>
+                                <td>Enfermaria</td>
+                                <td>Nacional</td>
+                            </tr>
+                        </tbody>
 
-                </table>
+                        <thead>
+                            <tr>
+                                <th className='table2'>Coparticipação</th>
+                                <th className='table2'>Tipo de adesão</th>
+                                <th className='table2'>Mais de um titular</th>
+                                <th className='table2'>Corretor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>Não</td>
+                                <td>Compulsoria</td>
+                                <td>Sim</td>
+                                <td>xxxx</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
             </Container>
+
 
 
         </ListSection>
