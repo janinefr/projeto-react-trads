@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container } from '../../globalStyles';
 import { VideoCarousel, TextCarousel, FCarousel, TextWrapper, TopLine, Heading, Group1, Group2, CarouselSection, } from '../Carousel/CarouselStyles';
-// import {CarouselSection} from './CarouselStyles'
 import group1 from '../../assets/Group1.png';
 import group2 from '../../assets/Group2.png';
 import { GoStarFill } from "react-icons/go";
