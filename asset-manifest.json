@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.js": "/projeto-react-trads/static/js/main.244ab460.js",
+    "static/media/imgpen.png": "/projeto-react-trads/static/media/imgpen.e2a11e0f7ca2151a1f0a.png",
+    "static/media/corretor.png": "/projeto-react-trads/static/media/corretor.f6663e2825d7ada15768.png",
+    "static/media/Group2.png": "/projeto-react-trads/static/media/Group2.6463b785ee20dbe6f3fd.png",
+    "static/media/Group1.png": "/projeto-react-trads/static/media/Group1.2648c4b868055c98f3c1.png",
+    "static/media/logos.png": "/projeto-react-trads/static/media/logos.d3edf986fd874c26e605.png",
+    "index.html": "/projeto-react-trads/index.html",
+    "main.244ab460.js.map": "/projeto-react-trads/static/js/main.244ab460.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.244ab460.js"
+  ]
+}
