@@ -5,7 +5,7 @@ export const ListSection = styled.section`
   justify-content: left;
   align-items: left; 
   flex-direction: column; 
-  height: 100vh;
+  height: 2550px;
   background-color: white;
   background-position: center;
   background-size: cover;
@@ -14,27 +14,28 @@ export const ListSection = styled.section`
 
   .tableWrapper{
     position: relative;
+    
 }
-  .buttonWrapper{
-    right: 200px;
-    top: 220px;
-    
+.buttonWrapper{
+  text-align: right;
+  margin-left: 10px;
+  
+  button{
+    font-size: 60px;
+    background: none;
+    border: none;
+    color: #3A5ECF;
+}
 
-    button{
-      font-size: 60px;
-      background: none;
-      border: none;
-      color: #3A5ECF;
-    
-  }
+}
 
-  }
   table {
+    margin-top: -20px;
     width: 100%;
     position: relative;
     display: inline-block;
     align-items: left;
-    border-collapse: separate; /* Para usar o border-spacing */
+    
     
   
   }
@@ -54,7 +55,10 @@ export const ListSection = styled.section`
   }
 
   caption {
-    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw;
     color: #3A5ECF;
     font-family: Work Sans;
     font-size: 20px;
@@ -63,6 +67,7 @@ export const ListSection = styled.section`
     line-height: normal;
     text-align: left;
     margin-bottom: 24px;
+    top: -60px;
     position: relative;
   
   }
@@ -78,7 +83,7 @@ export const ListSection = styled.section`
   }
   
   .table2{
-    padding-top: 56px;
+    padding-top: 50px;
 
   }
   
@@ -113,6 +118,124 @@ export const ListSection = styled.section`
     letter-spacing: 0.307px;
   }
 
+  ////////////
+
+  .tableWrapper2{
+    position: relative;
+    margin-top: 100px;
+
+    th{
+      padding: 20px;
+      color: #3A5ECF;
+      font-family: Public Sans;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px; /* 200% */
+      letter-spacing: 0.23px;
+      text-transform: uppercase;
+    }
+
+    td{
+      padding: 20px;;
+      border: none;
+      color: #212C4F;
+      font-family: Public Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+      letter-spacing: 0.307px;
+    }
+
+
+    #tabela2::after {
+      content: '';
+      position: absolute;
+      bottom: -24px; /* Posiciona a linha abaixo do caption */
+      left: 0;
+      width: 1504px; /* Define a largura da linha */
+      height: 1px;
+      background: rgba(0, 0, 0, 0.10);
+    }
+  }
+
+  .tableWrapper3{
+    position: relative;
+    margin-top: 100px;
+
+    th{
+      padding: 20px;
+      width: 2%;
+      color: #3A5ECF;
+      font-family: Public Sans;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px; /* 200% */
+      letter-spacing: 0.23px;
+      text-transform: uppercase;
+    }
+
+    td{
+      padding: 20px;
+      color: #212C4F;
+      font-family: Public Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+      letter-spacing: 0.307px;
+    }
+
+    .redText {
+      color: #DE3232;
+    }
+
+    .greenText {
+      color: #0FB820;
+    }
+
+    
+
+    #tabela3::after {
+      content: '';
+      position: absolute;
+      bottom: -24px; /* Posiciona a linha abaixo do caption */
+      left: 0;
+      width: 1504px; /* Define a largura da linha */
+      height: 1px;
+      background: rgba(0, 0, 0, 0.10);
+    }
+  }
+
+  .backgroundGrey {
+    border-radius: 4px;
+    background: #F7F7F7;
+    height: 65px;
+  }
+
+  .backgroundBlue{
+    border-radius: 4px;
+    background: #ECEFFB;
+    height: 65px;
+  }
+
+  .backgroundLightBlue{
+    border-radius: 4px;
+    background: #029BD80D;
+    height: 65px;
+    color: #029BD8;
+
+    td{
+      color: #029BD8;
+      padding: 20px;
+
+    }
+  }
+
+    
+}
   
 
 `;
