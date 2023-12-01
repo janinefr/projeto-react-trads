@@ -81,8 +81,20 @@ span {
 
 @media screen and (max-width: 962px) {
     position: absolute;
-    
-}
+    top: 65px;
+    right: 10%; /* Centraliza o botão à direita */
+    z-index: 999; /* Garante que o botão esteja acima de outros elementos */
+    padding: 10px; /* Adiciona um espaço interno ao redor do botão */
+
+    svg {
+      width: 25px; /* Reduz o tamanho do ícone */
+      height: 25px;
+    }
+
+    span {
+      font-size: 12px; /* Reduz o tamanho da fonte */
+    }
+  }
 `;
 
 

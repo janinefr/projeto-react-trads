@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import { Container } from '../../globalStyles';
-import { TopLine, Subtitle, TextWrapper, Heading, tableWrapper, buttonWrapper } from './ListStyles';
+import { TopLine, Subtitle, TextWrapper, Heading } from './ListStyles';
 import { ListSection } from './ListStyles';
 import { MdArrowDropDown, MdOutlineArrowDropUp } from "react-icons/md";
 
 
 const List = () => {
     const [openIcon, setOpenIcon] = useState(true);
-    const [openIcon2, setOpenIcon2] = useState(true);
-    const [openIcon3, setOpenIcon3] = useState(true);
-    const [openIcon4, setOpenIcon4] = useState(true);
-    const [openIcon5, setOpenIcon5] = useState(true);
+    const [openIcon2, setOpenIcon2] = useState(false);
+    const [openIcon3, setOpenIcon3] = useState(false);
+    const [openIcon4, setOpenIcon4] = useState(false);
+    const [openIcon5, setOpenIcon5] = useState(false);
 
     const toggleIcon = () => {
         console.log('chegou aqui')

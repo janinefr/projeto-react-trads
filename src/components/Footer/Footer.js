@@ -1,5 +1,4 @@
 import React from 'react';
-import { Section } from '../../globalStyles';
 import { TextWrapper } from '../../components/Content/ContentStyles';
 import { Cotacao, FooterSection, TopLine, Subtitle, Heading } from '../../components/Footer/FooterStyles';
 import { MdKeyboardDoubleArrowUp } from "react-icons/md";
@@ -21,8 +20,11 @@ const Footer = () => {
             </TextWrapper>
 
             <Cotacao>
-                <MdKeyboardDoubleArrowUp />
-                <span>Ver Cotação</span>
+                <a href="#minha_cotacao">
+                    <MdKeyboardDoubleArrowUp />
+                    </a>
+                    <span>Ver Cotação</span>
+                
             </Cotacao>
         </FooterSection>
 

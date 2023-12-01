@@ -5,7 +5,8 @@ export const ListSection = styled.section`
   justify-content: left;
   align-items: left; 
   flex-direction: column; 
-  height: 2550px;
+  max-height: 2550px;
+  padding-bottom: 56px;
   background-color: white;
   background-position: center;
   background-size: cover;
@@ -203,7 +204,7 @@ export const ListSection = styled.section`
       position: absolute;
       bottom: -24px; /* Posiciona a linha abaixo do caption */
       left: 0;
-      width: 1504px; /* Define a largura da linha */
+      max-width: 1504px; /* Define a largura da linha */
       height: 1px;
       background: rgba(0, 0, 0, 0.10);
     }
