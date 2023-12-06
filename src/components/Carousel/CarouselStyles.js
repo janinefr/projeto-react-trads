@@ -3,18 +3,17 @@ import styled from 'styled-components';
 
 
 export const CarouselSection = styled.section`
-position: relative;
-  display: flex;
-  justify-content: center; 
-  align-items: center; 
-  flex-direction: column; 
-  height: 100vh;
-  background-color: #212C4F;
-  background-position: center;
-  background-size: cover;
-  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
-  position: relative;
-  z-index: -1;
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+    height: 100vh;
+    background-color: #212C4F;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    z-index: -1;
 `;
 
 export const Group1 = styled.div`
@@ -117,7 +116,7 @@ export const FCarousel = styled.div`
     align-items: center; /* Centraliza verticalmente */
     flex-direction: row-reverse; 
     gap: 24px;
-    width: 1504px;
+    max-width: 1504px;
     height: 510px;
     flex-shrink: 0;
     border-radius: 4px;
@@ -175,6 +174,7 @@ export const VideoCarousel = styled.div`
     z-index:1;
 
     svg{
+        font-size: 50px;
         color: white;
     }
        

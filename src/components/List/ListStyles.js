@@ -11,6 +11,28 @@ export const ListSection = styled.section`
   background-position: center;
   background-size: cover;
   z-index: 1;
+
+  table{
+    width: 100%;
+    overflow-x: auto;
+    &::-webkit-scrollbar{
+      width: 0.5rem;
+      height: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-track-piece{
+      margin: 4.5rem;
+  }
+
+  &::-webkit-scrollbar-thumb{
+      background: #ECEFFB;
+      border-radius: 1rem;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+  background: #ECEFFB;
+}
+  }
  
 
   .tableWrapper{
@@ -50,7 +72,8 @@ export const ListSection = styled.section`
     position: absolute;
     bottom: -24px; /* Posiciona a linha abaixo do caption */
     left: 0;
-    width: 1504px; /* Define a largura da linha */
+    width: 100%; /* Define a largura da linha */
+    max-width: 1300px;
     height: 1px;
     background: rgba(0, 0, 0, 0.10);
   }
@@ -59,7 +82,7 @@ export const ListSection = styled.section`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60vw;
+    width: calc(100% - 60px);
     color: #3A5ECF;
     font-family: Work Sans;
     font-size: 20px;
@@ -78,7 +101,7 @@ export const ListSection = styled.section`
     position: absolute;
     bottom: -24px; /* Posiciona a linha abaixo do caption */
     left: 0;
-    width: 1504px; /* Define a largura da linha */
+    width: 100%; /* Define a largura da linha */
     height: 1px;
     background: rgba(0, 0, 0, 0.10);
   }
@@ -155,7 +178,8 @@ export const ListSection = styled.section`
       position: absolute;
       bottom: -24px; /* Posiciona a linha abaixo do caption */
       left: 0;
-      width: 1504px; /* Define a largura da linha */
+      width: 100%;
+      max-width: 1300px; /* Define a largura da linha */
       height: 1px;
       background: rgba(0, 0, 0, 0.10);
     }
@@ -204,7 +228,7 @@ export const ListSection = styled.section`
       position: absolute;
       bottom: -24px; /* Posiciona a linha abaixo do caption */
       left: 0;
-      max-width: 1504px; /* Define a largura da linha */
+      width: 100%; /* Define a largura da linha */
       height: 1px;
       background: rgba(0, 0, 0, 0.10);
     }

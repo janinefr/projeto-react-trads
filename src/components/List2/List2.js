@@ -35,7 +35,11 @@ const List2 = () => {
                     <div className='buttonWrapper'>
                         <button onClick={() => toggleIcon()}>{openIcon ? <MdArrowDropDown /> : <MdOutlineArrowDropUp />}</button>
                     </div>
-                    <caption>CNU</caption>
+
+                    
+                        <caption>CNU</caption>
+                    
+
                     <table id='tabela1' className={openIcon ? "tableOpen" : "tableClose"}>
 
 
@@ -82,6 +86,7 @@ const List2 = () => {
                             </tr>
                         </tbody>
                     </table>
+                    
                 </div>
 
                 <div className='TableWrapper2'>
