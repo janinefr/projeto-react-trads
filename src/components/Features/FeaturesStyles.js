@@ -5,30 +5,36 @@ export const FeaturesSection = styled.section`
   justify-content: center; 
   align-items: center; 
   flex-direction: column; 
-
-
   height: 100vh;
-
   background-color: #F5F5F5;
   background-position: center;
   background-size: cover;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   position: relative;
   z-index: 1;
+
+  @media screen and (max-width: 1300px) {
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+  }
+  
   
 
  h3{
-    
+  overflow: hidden;
     color: #212C4F;
     text-align: left;
     font-family: Public Sans;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-style: normal;
     font-weight: 400;
     line-height: 27px; /* 150% */
     letter-spacing: 0.389px;
     text-transform: uppercase;
     margin-bottom: 8px;
+
     @media screen and (max-width: 1300px) {
       text-align: center;
     }
@@ -41,20 +47,17 @@ export const FeaturesSection = styled.section`
     width: 60%;
     color: #3A5ECF;
     font-family: Work Sans;
-    font-size: 40px;
+    font-size: 1.6rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     margin-bottom: 48px;
+
     @media screen and (max-width: 1300px) {
       text-align: center;
       width: 100%;
-    }
-    @media screen and (max-width: 465px) {
-      font-size: 25px;  
-    }
-    @media screen and (max-width: 380px) {
       font-size: 20px;  
+      margin-bottom: 40px;
     }
  }
 
@@ -71,6 +74,7 @@ export const FeaturesSection = styled.section`
     @media screen and (max-width: 1300px) {
       text-align: center;
       width: 100%;
+      font-size: 13px;
     }
  }
 
@@ -87,6 +91,9 @@ export const FeaturesSection = styled.section`
       width: 100%;
       align-items: center;
       justify-content: center;
+     
+      font-size: 10px;
+      margin-bottom: 50px;
     }
     
  }
@@ -105,13 +112,14 @@ export const FeaturesSection = styled.section`
     
     color: #3A5ECF;
     font-family: Work Sans;
-    font-size: 38px;
+    font-size: 1.8rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 0.73px;
-    @media screen and (max-width: 736px) {
-        font-size: 20px;
+    @media screen and (max-width: 1300px) {
+        font-size: 16px;
+
       }
   }
 
@@ -158,9 +166,9 @@ export const StyledLogosContainer = styled.div`
   align-items: center;
   justify-content: center;
   padding: 0 20px;
-  @media screen and (max-width: 14000px) {
-    width: 80%;   
-  }
+  // @media screen and (max-width: 14000px) {
+  //   width: 80%;   
+  // }
   @media screen and (max-width: 930px) {
     display: none; /* Esconder o contêiner em telas menores que 768px */
   }
