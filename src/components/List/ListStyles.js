@@ -72,7 +72,7 @@ export const ListSection = styled.section`
     position: absolute;
     bottom: -24px; /* Posiciona a linha abaixo do caption */
     left: 0;
-    width: 100%; /* Define a largura da linha */
+    width: calc(100% + 60px); /* Define a largura da linha */
     max-width: 1300px;
     height: 1px;
     background: rgba(0, 0, 0, 0.10);
@@ -101,7 +101,7 @@ export const ListSection = styled.section`
     position: absolute;
     bottom: -24px; /* Posiciona a linha abaixo do caption */
     left: 0;
-    width: 100%; /* Define a largura da linha */
+    width: calc(100% + 60px); /* Define a largura da linha */
     height: 1px;
     background: rgba(0, 0, 0, 0.10);
   }
@@ -178,8 +178,7 @@ export const ListSection = styled.section`
       position: absolute;
       bottom: -24px; /* Posiciona a linha abaixo do caption */
       left: 0;
-      width: 100%;
-      max-width: 1300px; /* Define a largura da linha */
+      width: calc(100% + 60px);
       height: 1px;
       background: rgba(0, 0, 0, 0.10);
     }
@@ -228,7 +227,7 @@ export const ListSection = styled.section`
       position: absolute;
       bottom: -24px; /* Posiciona a linha abaixo do caption */
       left: 0;
-      width: 100%; /* Define a largura da linha */
+      width: calc(100% + 60px);/* Define a largura da linha */
       height: 1px;
       background: rgba(0, 0, 0, 0.10);
     }
