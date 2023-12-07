@@ -17,8 +17,15 @@ export const FeaturesSection = styled.section`
     overflow: hidden;
     text-align: center;
     width: 100%;
-    padding-top: 50px;
+    padding-top: 30px;
   }
+
+  // @media screen and (max-width: 740px) {
+  //   overflow: hidden;
+  //   text-align: center;
+  //   width: 100%;
+  //   padding-top: 70px;
+  // }
   
   
 
@@ -55,9 +62,15 @@ export const FeaturesSection = styled.section`
 
     @media screen and (max-width: 1300px) {
       text-align: center;
-      width: 100%;
-      font-size: 20px;  
+      width: 100%; 
       margin-bottom: 40px;
+    }
+
+    @media screen and (max-width: 740px) {
+      text-align: center;
+      width: 100%;
+      font-size: 16px;  
+      margin-bottom: 20px;
     }
  }
 
@@ -74,7 +87,11 @@ export const FeaturesSection = styled.section`
     @media screen and (max-width: 1300px) {
       text-align: center;
       width: 100%;
-      font-size: 13px;
+     
+    }
+
+    @media screen and (max-width: 740px) {
+      font-size: 13px;  
     }
  }
 
@@ -83,7 +100,7 @@ export const FeaturesSection = styled.section`
  }
 
  #numbers{
-    display: inline-flex;
+    display: inline-flex; 
     align-items: flex-start;
     gap: 56px;
     @media screen and (max-width: 1300px) {

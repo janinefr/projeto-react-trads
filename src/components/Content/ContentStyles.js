@@ -12,6 +12,12 @@ export const ContentSection = styled.section`
     background-color: #F5F5F5;
 	box-shadow: inset 0 0 0 1000px rgba (0, 0, 0, 0.2);
     position: relative;
+
+    @media screen and (max-width: 915px) {
+        overflow: hidden;
+        text-align: center;
+        width: 100%;
+      }
 `;
 
 
@@ -19,7 +25,7 @@ export const TextWrapper = styled.div`
     max-width: 60%;
     
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 915px) {
         padding: 40px 0 60px 0;		
         > h1,
 		p {
@@ -29,8 +35,10 @@ export const TextWrapper = styled.div`
 		flex-direction: column;
 		align-items: center;
         max-width: 100%;
+        margin-top: 50px;
 
 	}
+
 
 
     ul li{
@@ -39,6 +47,11 @@ export const TextWrapper = styled.div`
         align-items: center;
         list-style: none;
         margin: 3em 1em 0 0;
+        @media screen and (max-width: 915px) {
+            margin-top: 1.3em;
+            text-align: center;
+      
+          }
 
         
 }
@@ -60,6 +73,10 @@ export const TextWrapper = styled.div`
         font-weight: 400;
         line-height: 24px; /* 133.333% */
         letter-spacing: 0.346px;
+        @media screen and (max-width: 915px) {
+            font-size: 14px;
+      
+          }
         
     }
 
@@ -75,6 +92,13 @@ export const TopLine = styled.div`
     letter-spacing: 0.389px;
     text-transform: uppercase;
     margin-bottom: 1.3rem;
+
+    @media screen and (max-width: 915px) {
+      font-size: 15px;
+      
+
+	}
+
 `;
 export const Heading = styled.h2`
     color: #212C4F;
@@ -84,12 +108,9 @@ export const Heading = styled.h2`
     font-style: normal;
     line-height: normal;
 
-    @media  (max-width: 956px) {
-        font-size: 35px;   
-     }
-	@media screen and (max-width: 768px) {
-		text-align: center;
-        font-size: 30px;   
+	@media screen and (max-width: 915px) {
+        text-align: center;
+        font-size: 18px;   
 	}
     
     
@@ -104,9 +125,9 @@ export const Subtitle = styled.p`
     font-weight: 300;
     line-height: 30px; /* 150% */
     letter-spacing: 0.48px;
-    @media screen and (max-width: 768px) {
-		
-        font-size: 16px;   
+    @media screen and (max-width: 915px) {
+        margin-top: 30px;   
+        font-size: 14px;   
 	}
 `;
 
@@ -128,13 +149,10 @@ export const ImageWrapper = styled.div`
         
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 915px) {
     display: none;
     }
 
-    @media screen and (max-width: 768px) {
-    display: none;
-    }
 
    
 

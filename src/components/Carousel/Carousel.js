@@ -1,13 +1,41 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { Container } from '../../globalStyles';
-import { VideoCarousel, TextCarousel, FCarousel, TextWrapper, TopLine, Heading, Group1, Group2, CarouselSection, } from '../Carousel/CarouselStyles';
+import { TextWrapper, TopLine, Heading, Group1, Group2, CarouselSection, } from '../Carousel/CarouselStyles';
 import group1 from '../../assets/Group1.png';
 import group2 from '../../assets/Group2.png';
+import video from '../../assets/video-player.png';
+import arrowLeft from '../../assets/arrow-btnL.png';
+import arrowRight from '../../assets/arrow-btnR.png';
 import { GoStarFill } from "react-icons/go";
-import { FaCirclePlay } from "react-icons/fa6";
+import { register } from 'swiper/element/bundle'
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import carouselData from './CarouselData';
+
+register();
+
+
 
 
 const Carousel = () => {
+
+    const carousel = useRef(null);
+
+    const handleLeftClick = (e) => {
+        e.preventDefault();
+        console.log(carousel.current.offsetWidth);
+
+    };
+
+    const handleRightClick = (e) => {
+        e.preventDefault();
+        console.log(carousel.current.offsetWidth);
+
+    };
+
+
     return (
         <CarouselSection id="feedbacks">
             <Container>
@@ -15,24 +43,38 @@ const Carousel = () => {
                     <TopLine>feedbacks</TopLine>
                     <Heading>O que nossos clientes estão dizendo</Heading>
                 </TextWrapper>
-                <FCarousel>
-                    <TextCarousel>
-                        <h1>Isabela Fontes</h1>
-                        <p>Leo diam egestas aliquet etiam sed odio tortor
-                            sit. Ultricies feugiat mauris tempor odio eu massa amet sagittis.
-                            Fringilla enim vel arcu amet, condimentum sagittis. Lectus consequat pellentesque
-                            nibh convallis lacus, id. Orci, morbi sagittis, vel lobortis. Felis pellentesque maecenas
-                            aliquam turpis velit aliquam diam eget. Tincidunt amet aliquam ultricies nec. Commodo
-                            cras fringilla sed morbi velit semper iaculis. Vitae, lacinia nisl, sed velit orci. Nunc
-                            feugiat pellentesque pretium convallis. Arcu netus non, nunc et est sed venenatis in.
-                            Ut vulputate viverra quisque turpis nulla. Facilisis blandit sagittis, laoreet quis amet.</p>
-                        <GoStarFill /><GoStarFill /><GoStarFill /><GoStarFill /><GoStarFill />
-                    </TextCarousel>
-                    <VideoCarousel>
-                        <FaCirclePlay />
-                    </VideoCarousel>
 
-                </FCarousel>
+
+
+                <div className='carousel' ref={carousel}>
+                    <div className='container'>
+                        <div className='buttons'>
+                            <button onClick={handleLeftClick}><img src={arrowLeft} alt="left" /></button>
+                            <button onClick={handleRightClick}><img src={arrowRight} alt="right" /> </button>
+                        </div>
+
+
+                        {carouselData.map((item) => (
+                            <div className="item" key={item.id}>
+                                <div className='image'>
+                                    <img src={item.image} alt="video" />
+                                </div>
+                                <div className='info'>
+                                    <span className='name'>{item.name}</span>
+                                    <span className='description'>{item.description}</span>
+                                    <div className='icons'>
+                                        {Array.from({ length: item.icons }).map((_, index) => (
+                                            <GoStarFill key={index} />
+                                        ))}
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+
+                    </div>
+                </div>
+
+
 
 
             </Container>

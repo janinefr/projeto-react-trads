@@ -14,6 +14,10 @@ export const FooterSection = styled.section`
     position: relative;
     text-align: center;
 
+    @media screen and (max-width: 915px) {
+        padding: 30px;     
+	}
+
     
 
 `;
@@ -40,12 +44,8 @@ export const Heading = styled.h2`
     line-height: normal;
     margin-bottom: 40px;
 
-    @media  (max-width: 956px) {
-        font-size: 35px;   
-     }
-	@media screen and (max-width: 768px) {
-		text-align: center;
-        font-size: 30px;   
+    @media screen and (max-width: 915px) {
+        font-size: 30px;     
 	}
     
     
@@ -82,17 +82,17 @@ span {
 @media screen and (max-width: 962px) {
     position: absolute;
     top: 65px;
-    right: 10%; /* Centraliza o botão à direita */
-    z-index: 999; /* Garante que o botão esteja acima de outros elementos */
-    padding: 10px; /* Adiciona um espaço interno ao redor do botão */
+    right: 10%; 
+    z-index: 999; 
+    padding: 10px; 
 
     svg {
-      width: 25px; /* Reduz o tamanho do ícone */
+      width: 25px; 
       height: 25px;
     }
 
     span {
-      font-size: 12px; /* Reduz o tamanho da fonte */
+      font-size: 12px;
     }
   }
 `;
@@ -107,8 +107,8 @@ export const Subtitle = styled.p`
     line-height: 27px; /* 168.75% */
     letter-spacing: 0.346px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 915px) {
 		
-        font-size: 16px;   
+        font-size: 14px;   
 	}
 `;
