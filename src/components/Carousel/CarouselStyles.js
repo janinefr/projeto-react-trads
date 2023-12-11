@@ -40,10 +40,14 @@ export const CarouselSection = styled.section`
             flex-direction: row;
             align-items: center;
             object-fit: cover;
+            margin: 30px;
           }   
 
           .slide_image{
-            width: 30vw;
+            width: 25vw;
+            @media screen and (max-width: 915px) {
+                display: none; 
+               }
           }
 
           .slide_text{
@@ -51,9 +55,68 @@ export const CarouselSection = styled.section`
             justify-content: center;
             flex-direction: column;
             align-items: left;
-            margin: 30px;
-
+            margin: 20px;
           }
+
+          .slide_text1{
+            color: #FFF;
+            font-family: Work Sans;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 27px; /* 112.5% */
+            letter-spacing: 0.518px;
+            margin-bottom: 24px;
+          }
+
+          .slide_text2{
+            color: #FFF;
+            font-family: Work Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300px;
+            line-height: 24px; /* 150% */
+            letter-spacing: 0.307px;
+            
+          }
+
+          .icons{
+            display: flex;
+            justify-content: center;
+            margin-left: -80px;
+            margin-top: -30px;
+            color: #F3C141;
+            font-size: 30x;
+          }
+
+          .swiper-button-next{
+            color: #FFFFFF;
+          }
+
+          .swiper-button-prev {
+            color: #FFFFFF; 
+            // background: #007bff;
+            // border-radius: 50%; 
+            // width: 40px; 
+            // height: 40px; 
+            // display: flex; 
+            // justify-content: center; 
+            // align-items: center; 
+          }
+          
+
+          .swiper-pagination-bullet {
+            width: 32px;
+            height: 8px;
+            border-radius: 4px; 
+            margin: -10px 5px; /* Espaçamento entre marcadores */
+          }
+
+          .swiper-wrapper{
+            margin-bottom: 40px;
+          }
+
+          
         }
 
 

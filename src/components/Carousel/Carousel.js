@@ -15,6 +15,7 @@ import 'swiper/css/scrollbar';
 // import carouselData from './CarouselData';
 import { Swiper, SwiperSlide } from 'swiper/react'
 
+
 register();
 
 
